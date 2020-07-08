@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+</head>
+<body>
+    @{
+        bool isTrue = (bool)ViewBag.IsComming;
+
+        string Name = (string)ViewBag.Name;
+        string Surname = (string)ViewBag.Surname;
+    }
+
+    @if (isTrue)
+    {
+        <p>Geldiyiniz @Name ucun teshekkurler</p>
+    }
+    else
+    {
+        <p>Qaqash @Name nosh gemirsen?!!!</p>
+
+    }
+
+    @for (int i = 0; i < 10; i++) { }
+
+</body>
+</html>

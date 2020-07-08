@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InvitationForm</title>
+</head>
+<body>
+    <form action="/Event/SubmitInvitation" method="post">
+        <p>
+            <label for="name">FirstName</label>
+            <input type="text" name="name" id="name"/>
+        </p>
+        <p>
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" />
+        </p>
+        <p>
+            <select name="isComming" id="isComming">
+                <option value="true">Gelirem</option>
+                <option value="false">Gelmirem</option>
+
+            </select>
+        </p>
+        <p>
+            <button type="submit">Apply</button>
+        </p>
+    </form>
+</body>
+</html>
