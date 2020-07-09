@@ -48,6 +48,10 @@ namespace FirstLesson._2814.Controllers
             ViewBag.ErrorMessage = url;
             return View();
         }
+        public IActionResult NewAction()
+        {
+            return View();
+        }
 
     }
 }

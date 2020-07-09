@@ -1,0 +1,35 @@
+﻿@model FirstLesson._2814.Models.ToDo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <form action="/todo/Add" method="post">
+        <p>
+            <input type="hidden" name="ToDoId" value="@Model.Id" />
+            <input name="Name" id="Name" type="text" />
+            <button type="submit">Add</button>
+        </p>
+    </form>
+    <ul>
+        @foreach (var item in Model.ToDoItems)
+        {
+            
+            <li><a>@item.Name</a></li>
+            <li>@item.Id</li>
+            <form action="/Todo/Delete" method="post">
+                <input type="hidden" name="id" id="id" value="@item.Id" />
+                <input type="hidden" name="toDoId" value="@Model.Id" />
+                <button type="submit">Delete</button>
+            </form>
+        }
+    </ul>
+</body>
+</html>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EsHFzRbIOZyOYZ45gDw5R8u5vZZ53oQJ7JYykM39RhtGCm8MIOJUAuDHyaHwNUwGEBCDvjvrtI0W9d8Ch9omgQ==",
+  "dgSpecHash": "8g5qIF6+xEUr1fF8WCuBX/CNG9kUiq8fVvHPyrWwmu4sLdjSCraS6XE2U14xMwYU1EmNczoTUvuvvvXQFdpBsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Murad\\source\\repos\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj",
+  "projectFilePath": "C:\\Users\\Murad\\FSDE_2814\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

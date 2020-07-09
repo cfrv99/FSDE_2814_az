@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Murad\\source\\repos\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj": {}
+    "C:\\Users\\Murad\\FSDE_2814\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Murad\\source\\repos\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj": {
+    "C:\\Users\\Murad\\FSDE_2814\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Murad\\source\\repos\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj",
+        "projectUniqueName": "C:\\Users\\Murad\\FSDE_2814\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj",
         "projectName": "FirstLesson.2814",
-        "projectPath": "C:\\Users\\Murad\\source\\repos\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj",
+        "projectPath": "C:\\Users\\Murad\\FSDE_2814\\FirstLesson.2814\\FirstLesson.2814\\FirstLesson.2814.csproj",
         "packagesPath": "C:\\Users\\Murad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Murad\\source\\repos\\FirstLesson.2814\\FirstLesson.2814\\obj\\",
+        "outputPath": "C:\\Users\\Murad\\FSDE_2814\\FirstLesson.2814\\FirstLesson.2814\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Murad\\AppData\\Roaming\\NuGet\\NuGet.Config",

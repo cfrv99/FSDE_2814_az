@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using FirstLesson._2814.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -47,6 +49,17 @@ namespace FirstLesson._2814
             //    await context.Response.WriteAsync(context.Request.Path.Value.ToString());
             //});
             app.UseStaticFiles();
+
+
+            //app.UseExceptionHandler(a => a.Run(async (context) =>
+            //  {
+            //      string html = File.ReadAllText("./wwwroot/Error.html");
+            //      context.Response.ContentType = "text/html";
+            //      await context.Response.WriteAsync(html);
+            //  }));
+            //app.UseExceptionHandler("/error");
+
+            app.UseMiddleware<CustomErrorHandlingMiddleware>();
             app.UseMvcWithDefaultRoute();  // /controllerName/actionName/{id?}
         }
     }

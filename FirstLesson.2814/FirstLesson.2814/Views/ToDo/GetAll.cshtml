@@ -1,0 +1,23 @@
+﻿@model List<FirstLesson._2814.Models.ToDo>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetAll</title>
+</head>
+<body>
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li><a href="/ToDo/Details/@item.Id">@item.Name</a></li>
+
+        }
+    </ul>
+</body>
+</html>
