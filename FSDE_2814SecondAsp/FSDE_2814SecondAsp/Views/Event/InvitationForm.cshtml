@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InvitationForm</title>
+</head>
+<body>
+    <form action="/Event/SubmitForm" method="post">
+        <p>
+            <label>FirstName</label>
+            <input type="text" name="model.FirstName" id="model.FirstName" />
+        </p>
+        <p>
+            <label>Surname</label>
+            <input type="text" name="model.Surname" id="model.Surname" />
+        </p>
+        <p>
+            <select name="model.IsComming" id="model.IsComming">
+                <option value="true">Gelirem</option>
+                <option value="false">Gelmirem</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">Apply</button>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+</head>
+<body>
+    @{ 
+        bool isComming = (bool)ViewBag.IsComming;
+        string Name = (string)ViewBag.Name;
+        string Surname = (string)ViewBag.Surname;
+    }
+
+
+    @if (isComming)
+    {
+        <h1 style="color:green">Hormetli @Name, Geldiyiniz uchun teshekkur edirem!!!</h1>
+    }
+    else
+    {
+        <h1 style="color:red">@Name Qaqash, Nosh gelmirsen?!</h1>
+    }
+
+</body>
+</html>
