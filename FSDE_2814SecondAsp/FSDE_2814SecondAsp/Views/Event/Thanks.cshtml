@@ -10,12 +10,15 @@
         bool isComming = (bool)ViewBag.IsComming;
         string Name = (string)ViewBag.Name;
         string Surname = (string)ViewBag.Surname;
+        Person person = new Person();
+        string a = person.Salam();
+        string name = (string)ViewData["Ibrahim"];
     }
 
 
     @if (isComming)
     {
-        <h1 style="color:green">Hormetli @Name, Geldiyiniz uchun teshekkur edirem!!!</h1>
+        <h1 style="color:green">Hormetli @Name, Geldiyiniz uchun teshekkur edirem!!! @a----@name</h1>
     }
     else
     {

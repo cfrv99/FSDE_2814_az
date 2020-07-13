@@ -10,5 +10,10 @@ namespace FSDE_2814SecondAsp.Models
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public bool IsComming { get; set; }
+
+        public string Salam()
+        {
+            return "Salam";
+        }
     }
 }

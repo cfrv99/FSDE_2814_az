@@ -1,0 +1,20 @@
+﻿@model IEnumerable<AddViewModel>
+@{
+    ViewData["Title"] = "ForAddForm";
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+
+
+
+
+@await Html.PartialAsync("~/Views/Shared/_PartialTest.cshtml",Model);
+
+<form action="/Event/Add" method="post">
+    <p>
+        <input type="text" name="name" id="name" value="" />
+    </p>
+    <p>
+        <button class="btn btn-info" type="submit">Add</button>
+    </p>
+</form>
+

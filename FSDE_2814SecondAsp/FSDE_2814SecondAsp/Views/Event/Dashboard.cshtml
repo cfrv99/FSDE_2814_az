@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+
+<h1>Dashboard</h1>
+
+@if (TempData["Message"] != null)
+{
+    <h1>@TempData["Message"]</h1>
+}
+
+<h1 class="container-fluid">
+    @await Html.PartialAsync("~/Views/Shared/_PartialRest.cshtml");
+</h1>
+

@@ -21,5 +21,11 @@ namespace FSDE_2814SecondAsp.Controllers
             HttpContext.Response.StatusCode = 404;
             return View();
         }
+
+        [HttpGet]
+        public IActionResult SSS()
+        {
+            return View();
+        }
     }
 }

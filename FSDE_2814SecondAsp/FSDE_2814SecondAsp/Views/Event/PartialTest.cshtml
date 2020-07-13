@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "PartialTest";
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+
+<h1>PartialTest</h1>
+
+
+
+
+@await Html.PartialAsync("~/Views/Shared/_PartialTest.cshtml", new ViewDataDictionary(ViewData) { { "index", 4 } });
