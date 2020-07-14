@@ -1,0 +1,11 @@
+﻿@model ToDo
+@{
+    ViewData["Title"] = "TagHelper";
+}
+
+<h1>TagHelper</h1>
+
+<form asp-action="Post" asp-controller="Test" method="post">
+    <input type="text" asp-for="Title"/>
+    <button type="submit">Add</button>
+</form>

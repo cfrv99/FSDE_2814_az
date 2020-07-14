@@ -15,6 +15,12 @@ namespace ToDoApp.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(List<ToDo> names)
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "A";
+}
+
+<h1>A</h1>
+
+<form action="/Test/B" method="post">
+
+    @for (int i = 0; i < 5; i++)
+    {
+        <input type="hidden" name="[@i].Id" value="@i"/>
+        <input type="hidden" name="[@i].IsDone" value="false"/>
+        <input  type="text" name="[@i].Title"/>
+    }
+        <input type="submit"  value="Add" />
+</form>

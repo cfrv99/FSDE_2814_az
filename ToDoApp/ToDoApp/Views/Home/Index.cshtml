@@ -1,8 +1,32 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    List<string> a = new List<string>
+    {
+        "Salam",
+        "BirdeSalam"
+    };
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<form action="/Home/Index" method="post">
+
+    @for (int i = 0; i < 5; i++)
+    {
+        <input type="hidden" name="[@i].Id" id="names" value="@i"/>
+        <input type="text" name="[@i].Title" id="names"/>
+    }
+<input type="submit"  value="Add" />
+
+</form>
+<email mail-to="salam"></email>
+<button bs-button="success"></button>
+<ul items="@a">
+
+</ul>
+
+<select class="form-control form-control-lg">
+
+</select>

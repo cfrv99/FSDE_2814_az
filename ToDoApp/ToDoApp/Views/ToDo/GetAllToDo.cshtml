@@ -1,4 +1,4 @@
-﻿@model List<ToDo>
+﻿@model ToDoListViewModel
 @{
     ViewData["Title"] = "GetAllToDo";
 }
@@ -14,10 +14,10 @@
 
         }
     </ul>*@
-<form action="/ToDo/Add" method="post">
+<form asp-action="Add" asp-controller="ToDo" method="post">
     <div class="form-group">
         <label for="exampleInputEmail1">Item</label>
-        <input type="text" class="form-control" id="Title" name="Title" aria-describedby="emailHelp">
+        <input type="text" class="form-control" asp-for="@Model.ToDo.Title" aria-describedby="emailHelp">
     </div>
     <div class="form-group">
         <input class="btn btn-success" type="submit" value="Add New Item" />
@@ -36,7 +36,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.ToDos)
         {
 
             <tr>
@@ -50,7 +50,7 @@
                         @if (item.IsDone)
                         {
                             <div class="form-group form-check">
-                                <input checked type="checkbox" class="form-check-input" value="true" id="IsDone" name="IsDone">
+                                <input checked type="checkbox" class="form-check-input" value="true" id="model.IsDone" name="model.IsDone">
                                 <label class="form-check-label" for="exampleCheck1"></label>
                             </div>
 
@@ -58,7 +58,7 @@
                         else
                         {
                             <div class="form-group form-check">
-                                <input onchange="handleChange()" type="checkbox" class="form-check-input" value="true" id="IsDone"  name="IsDone">
+                                <input  type="checkbox" class="form-check-input" value="true" id="model.IsDone"  name="model.IsDone">
                                 <label class="form-check-label" for="exampleCheck1"></label>
                             </div>
                         }
@@ -69,6 +69,11 @@
         }
     </tbody>
 </table>
+
+<select asp-items="@ViewBag.ToDos" class="form-control form-control-lg">
+    
+</select>
+
 <script>
 
 </script>

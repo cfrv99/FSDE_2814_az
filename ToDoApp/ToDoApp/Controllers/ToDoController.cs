@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,14 +22,20 @@ namespace ToDoApp.Controllers
         public IActionResult GetAllToDo()
         {
             var data = toDoService.GetAll();
-            return View(data);
+            var selectList = new SelectList(data,"Id","Title");
+            ViewBag.ToDos = selectList;
+            ToDoListViewModel entity = new ToDoListViewModel
+            {
+                ToDos = data
+            };
+            return View(entity);
         }
         [HttpPost]
-        public IActionResult Add(ToDoAddDTO model)
+        public IActionResult Add(ToDoListViewModel model)
         {
             ToDo toDo = new ToDo
             {
-                Title = model.Title,
+                Title = model.ToDo.Title,
                 IsDone = false
             };
             toDoService.Add(toDo);
@@ -47,9 +54,9 @@ namespace ToDoApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult SelectTask(SeletctToDoDTO model,bool IsDone)
+        public IActionResult SelectTask(SeletctToDoDTO model)
         {
-
+           
             if (model.Id <= 0)
             {
                 return BadRequest();
@@ -57,11 +64,12 @@ namespace ToDoApp.Controllers
             ToDo toDo = new ToDo
             {
                 Id = model.Id,
-                IsDone = IsDone
+                IsDone = model.IsDone
             };
             toDoService.SelectTask(toDo);
 
             return RedirectToAction("GetAllToDo");
         }
+
     }
 }

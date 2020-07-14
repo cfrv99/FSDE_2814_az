@@ -13028,11 +13028,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murad\\source\\repos\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
+      "projectUniqueName": "C:\\Users\\Murad\\FSDE_2814\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
       "projectName": "ToDoApp",
-      "projectPath": "C:\\Users\\Murad\\source\\repos\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
+      "projectPath": "C:\\Users\\Murad\\FSDE_2814\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
       "packagesPath": "C:\\Users\\Murad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murad\\source\\repos\\ToDoApp\\ToDoApp\\obj\\",
+      "outputPath": "C:\\Users\\Murad\\FSDE_2814\\ToDoApp\\ToDoApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Murad\\AppData\\Roaming\\NuGet\\NuGet.Config",
