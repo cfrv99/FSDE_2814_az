@@ -58,7 +58,11 @@ namespace ToDoApp.Controllers
         [HttpPost]
         public IActionResult SelectTask(SeletctToDoDTO model)
         {
-           
+
+            var uri = Url.Action("Delete", "ToDo", new { id = 5 });
+
+            //https://localhost:5000/ToDo/Delete/5
+
             if (model.Id <= 0)
             {
                 return BadRequest();

@@ -56,7 +56,7 @@ namespace ToDoApp
                  );
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action}/{id:alpha?}",
+                    template: "{controller}/{action}/{id:int?}",
                     defaults: new { controller = "Home", action = "Index" }
                     );
 

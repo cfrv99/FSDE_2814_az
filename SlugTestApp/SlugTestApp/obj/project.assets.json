@@ -13028,11 +13028,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murad\\source\\repos\\SlugTestApp\\SlugTestApp\\SlugTestApp.csproj",
+      "projectUniqueName": "C:\\Users\\Murad\\FSDE_2814\\SlugTestApp\\SlugTestApp\\SlugTestApp.csproj",
       "projectName": "SlugTestApp",
-      "projectPath": "C:\\Users\\Murad\\source\\repos\\SlugTestApp\\SlugTestApp\\SlugTestApp.csproj",
+      "projectPath": "C:\\Users\\Murad\\FSDE_2814\\SlugTestApp\\SlugTestApp\\SlugTestApp.csproj",
       "packagesPath": "C:\\Users\\Murad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murad\\source\\repos\\SlugTestApp\\SlugTestApp\\obj\\",
+      "outputPath": "C:\\Users\\Murad\\FSDE_2814\\SlugTestApp\\SlugTestApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Murad\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IM+HG/qavUBA1vKU5mf13LF06a6LLgCUC1DaX/4Todp8wFi1zfyK7xFSaPJPIu1ZQZHjzLz8Lw/7Ne/f5gGNmg==",
+  "dgSpecHash": "YSXGdzBcX8+VKcVIv0dw7JhtZmXZ/lRWzab02evXrhsb1jx3f5Eaila6z9G32bcZhzvtTTvgXsrda0L14EDTqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Murad\\source\\repos\\SlugTestApp\\SlugTestApp\\SlugTestApp.csproj",
+  "projectFilePath": "C:\\Users\\Murad\\FSDE_2814\\SlugTestApp\\SlugTestApp\\SlugTestApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

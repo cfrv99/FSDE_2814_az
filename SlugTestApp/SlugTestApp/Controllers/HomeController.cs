@@ -19,7 +19,7 @@ namespace SlugTestApp.Controllers
         {
             return View();
         }
-
+        // /contrName/ActName/id/id2/id3
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,0 +1,39 @@
+﻿@model PostDetailsviewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card mb-3">
+    <img src="https://via.placeholder.com/728x90.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide
+
+C/O https://placeholder.com/" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Post.Name</h5>
+        <p class="card-text">@Model.Post.Desc</p>
+        <p class="card-text"><small class="text-muted">Viewed: @Model.Post.ViewedCount</small></p>
+    </div>
+</div>
+<form asp-action="AddComment" asp-controller="Blog" class="form-group" method="post">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">With textarea</span>
+        </div>'
+        <input type="hidden" asp-for="@Model.Comment.PostId" value="@Model.Post.Id" />
+        <textarea asp-for="@Model.Comment.Text" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div class="form-control-sm">
+        <button type="submit">Add Comment!!!</button>
+        <a asp-action="Delete" asp-controller="Blog" asp-route-id="@Model.Post.Id">
+            <span class="badge badge-danger">Delete</span>
+        </a>
+    </div>
+</form>
+
+@foreach (var item in Model.Comments)
+{
+    <div class="alert alert-dark" role="alert">
+        @item.Text --- <a asp-action="DeleteComment" asp-controller="Blog" asp-route-id="@item.Id">
+    <span class="badge badge-danger">Delete Comment</span>
+</a>
+    </div>
+}
