@@ -47,9 +47,20 @@ namespace ToDoApp
 
             app.UseMvc(routes =>
             {
+                // aTest/A
+
+                routes.MapRoute(
+                 name: "custom",
+                 template: "elanlar/butunElanlar/birdeElanlar/{controller}/{action}",    //atest/a
+                 defaults: new { controller = "Test", action = "A" }
+                 );
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller}/{action}/{id:alpha?}",
+                    defaults: new { controller = "Home", action = "Index" }
+                    );
+
+               
             });
         }
     }

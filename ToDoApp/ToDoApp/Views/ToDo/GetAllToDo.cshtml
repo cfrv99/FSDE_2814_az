@@ -36,42 +36,17 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.ToDos)
-        {
-
-            <tr>
-                <th scope="row">@item.Id</th>
-                <td scope="row">@item.Title</td>
-                <td scope="row">@(item.IsDone == true ? "Done":"Not Done")</td>
-                <td scope="row"><a href="/ToDo/Delete/@item.Id" class="btn btn-danger"> Delete </a><a class="btn btn-info">Edit</a></td>
-                <td scope="row">
-                    <form action="/ToDo/SelectTask" method="post">
-                        <input type="hidden" value="@item.Id" name="model.Id" id="model.Id" />
-                        @if (item.IsDone)
-                        {
-                            <div class="form-group form-check">
-                                <input checked type="checkbox" class="form-check-input" value="true" id="model.IsDone" name="model.IsDone">
-                                <label class="form-check-label" for="exampleCheck1"></label>
-                            </div>
-
-                        }
-                        else
-                        {
-                            <div class="form-group form-check">
-                                <input  type="checkbox" class="form-check-input" value="true" id="model.IsDone"  name="model.IsDone">
-                                <label class="form-check-label" for="exampleCheck1"></label>
-                            </div>
-                        }
-                        <input type="submit" name="Submit" value="Submit" />
-                    </form>
-                </td>
-            </tr>
-        }
+        @*@await Html.PartialAsync("~/Views/Shared/_ToDoList.cshtml", @Model)*@
     </tbody>
 </table>
 
+
+
+@*@await Html.PartialAsync("~/Views/Shared/_Modal.cshtml")*@
+
+@await Component.InvokeAsync("ToDoList")
+
 <select asp-items="@ViewBag.ToDos" class="form-control form-control-lg">
-    
 </select>
 
 <script>

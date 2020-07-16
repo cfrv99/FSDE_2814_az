@@ -1,0 +1,32 @@
+﻿@model List<Post>
+@{
+    ViewData["Title"] = "GetAllPost";
+}
+<div class="row">
+    <div class="col-8">
+
+
+        @foreach (var item in Model)
+        {
+
+            <div class="card text-center">
+                <div class="card-header">
+                    View: @item.ViewedCount
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Desc</p>
+                    <a asp-action="GetByIdPost" asp-controller="Blog" asp-route-id="@item.Id" class="btn btn-primary">Go Details</a>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+        }
+
+    </div>
+
+</div>
+
+
+

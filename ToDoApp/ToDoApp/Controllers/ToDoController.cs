@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
@@ -26,8 +27,9 @@ namespace ToDoApp.Controllers
             ViewBag.ToDos = selectList;
             ToDoListViewModel entity = new ToDoListViewModel
             {
-                ToDos = data
+                
             };
+            var a = HttpContext.Request.GetDisplayUrl(); 
             return View(entity);
         }
         [HttpPost]
@@ -67,9 +69,12 @@ namespace ToDoApp.Controllers
                 IsDone = model.IsDone
             };
             toDoService.SelectTask(toDo);
-
+            
             return RedirectToAction("GetAllToDo");
         }
+
+        //1. her bir view parcasi ucun ayri bir davranish (yeni backend ) yaza bilirk.
+        // 2.
 
     }
 }

@@ -70,3 +70,6 @@ C:\Users\Murad\FSDE_2814\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\ToDoApp.genrunt
 C:\Users\Murad\FSDE_2814\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\ToDoApp.csproj.CopyComplete
 C:\Users\Murad\FSDE_2814\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\Razor\Views\Test\A.cshtml.g.cs
 C:\Users\Murad\FSDE_2814\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\Razor\Views\Test\TagHelper.cshtml.g.cs
+C:\Users\Murad\FSDE_2814\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ToDoList.cshtml.g.cs
+C:\Users\Murad\FSDE_2814\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Modal.cshtml.g.cs
+C:\Users\Murad\FSDE_2814\ToDoApp\ToDoApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ToDoList\Default.cshtml.g.cs
