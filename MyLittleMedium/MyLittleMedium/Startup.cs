@@ -26,7 +26,7 @@ namespace MyLittleMedium
         {
             services.AddTransient<IPostService, PostService>();
             services.AddTransient<ICommentService, CommentService>();
-
+            services.AddTransient<ICategoryService, CategoryService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

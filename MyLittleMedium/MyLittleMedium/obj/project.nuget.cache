@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JlDQy+xcpp6tjUe2VKnRSPQCudHP44ZkanXrDD4Y88OWtbbyR+Uf7v5d4YuSK8usLgNqxNGBviGp44KuBdu/pA==",
+  "dgSpecHash": "eMm7cVrEQGbYQFl91jvQQFBAJhRVAi3aduJkY09kZu3uWXb6jLmG5wYZAnrp/J2ML0hhDAX0R889GKfay7aCBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Murad\\source\\repos\\MyLittleMedium\\MyLittleMedium\\MyLittleMedium.csproj",
+  "projectFilePath": "C:\\Users\\Murad\\FSDE_2814\\MyLittleMedium\\MyLittleMedium\\MyLittleMedium.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

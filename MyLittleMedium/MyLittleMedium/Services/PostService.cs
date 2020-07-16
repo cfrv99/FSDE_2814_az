@@ -15,6 +15,7 @@ namespace MyLittleMedium.Services
         List<Post> GetAll();
         Post GetById(int id);
         void IncrementViewedCount(int postId);
+        List<Post> FilterByCategory(int? categoryiId);
     }
     public class PostService : IPostService
     {
@@ -24,10 +25,10 @@ namespace MyLittleMedium.Services
         {
             Posts = new List<Post>
             {
-                new Post{Id=1,Name="Asp.Net Core",Desc="Asp.Net Core the best",ViewedCount=0},
-                new Post{Id=2,Name="PHP",Desc="PHP the best",ViewedCount=0},
-                new Post{Id=3,Name="Django",Desc="Django the best",ViewedCount=0},
-                new Post{Id=4,Name="SpringBoot",Desc="SpringBoot the best",ViewedCount=0}
+                new Post{Id=1,Name="Asp.Net Core",Desc="Asp.Net Core the best",ViewedCount=0,CategoryId=1},
+                new Post{Id=2,Name="PHP",Desc="PHP the best",ViewedCount=0,CategoryId=2},
+                new Post{Id=3,Name="Django",Desc="Django the best",ViewedCount=0,CategoryId=3},
+                new Post{Id=4,Name="SpringBoot",Desc="SpringBoot the best",ViewedCount=0,CategoryId=1}
             };
         }
 
@@ -42,6 +43,11 @@ namespace MyLittleMedium.Services
         {
             var post = GetById(entity.Id);
             Posts.Remove(post);
+        }
+
+        public List<Post> FilterByCategory(int? categoryiId)
+        {
+            return Posts.Where(i => i.CategoryId == categoryiId).ToList();
         }
 
         public List<Post> GetAll()

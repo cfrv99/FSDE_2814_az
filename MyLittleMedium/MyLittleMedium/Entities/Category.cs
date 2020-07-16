@@ -5,12 +5,9 @@ using System.Threading.Tasks;
 
 namespace MyLittleMedium.Entities
 {
-    public class Post
+    public class Category
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Desc { get; set; }
-        public int ViewedCount { get; set; }
-        public int CategoryId { get; set; }
     }
 }

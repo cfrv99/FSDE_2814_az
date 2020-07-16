@@ -39,7 +39,7 @@ namespace MyLittleMedium.Services
         public void Delete(Comment comment)
         {
             var commentData = GetById(comment.Id);
-
+            Comments.Remove(commentData);
         }
 
         public List<Comment> GetAll()

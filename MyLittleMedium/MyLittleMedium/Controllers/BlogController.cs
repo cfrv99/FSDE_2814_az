@@ -20,9 +20,20 @@ namespace MyLittleMedium.Controllers
             this.commentService = commentService;
         }
         [HttpGet]
-        public IActionResult GetAllPost()
+        public IActionResult GetAllPost(int? categoryId)
         {
-            return View(postService.GetAll());
+            List<Post> response = null;
+            var result = postService.GetAll();
+
+            if (categoryId == null)
+            {
+                response = result;
+            }
+            else
+            {
+                response = result.Where(i=>i.CategoryId==categoryId).ToList();
+            }
+            return View(response);
         }
 
         [HttpGet]
@@ -40,6 +51,7 @@ namespace MyLittleMedium.Controllers
                 Post = post,
                 Comments = comments
             };
+            TempData["postId"] = id;
             return View(model);
         }
 
@@ -56,7 +68,8 @@ namespace MyLittleMedium.Controllers
         {
             var data = commentService.GetById(id);
             commentService.Delete(data);
-            return RedirectToAction("Details");
+            int postId = Convert.ToInt32(TempData["postId"]);
+            return RedirectToAction("Details",new { id=postId });
         }
 
         [HttpPost]
