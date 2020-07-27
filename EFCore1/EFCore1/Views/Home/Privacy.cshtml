@@ -1,0 +1,58 @@
+﻿@model List<Post>
+@{
+    
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+<input type="submit" onclick="ajaxPost()" name="name" value="" />
+@*@{
+        var post = (Post)ViewBag.Data;
+    }*@
+
+@*@if (TempData["Data"] == null)
+    {
+        <h1>Bosh</h1>
+    }
+    else
+    {
+        <h1>@TempData["Data"]</h1>
+    }*@
+
+<ul id="list">
+    @foreach (var item in Model)
+    {
+        <li>@item.Desc</li>
+    }
+</ul>
+@TempData["Data"]
+<script>
+    function ajaxPost() {
+        var Post = {
+            Name: "salam",
+            Desc: "salamnecesen",
+            Rating: 5
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "/Home/PostFromAjax",
+            data: JSON.stringify(Post),
+            dataType: "json",
+            contentType: 'application/json',
+            success: function (data) {
+                console.log(data);
+                var ul = document.getElementById("list");
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(data[data.length - 1].desc));
+                ul.appendChild(li);
+
+            }
+        });
+    }
+
+
+</script>

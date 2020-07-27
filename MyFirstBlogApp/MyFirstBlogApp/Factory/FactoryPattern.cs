@@ -11,12 +11,9 @@ namespace MyFirstBlogApp.Factory
     {
         public static IEntityBase CreateInstance(IEntityBase type)
         {
-            var name = nameof(type);
-            if (name=="Post")
-            {
-                return new Post();
-            }
-            return null;
+            var typeData = type.GetType();
+            var result = Activator.CreateInstance(typeData) as IEntityBase;
+            return result;
         }
     }
 }

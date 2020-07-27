@@ -49,7 +49,7 @@ namespace MyFirstBlogApp.BLL.Concrete
                 Desc = i.Desc,
                 ImageUrl = i.ImageUrl,
                 Name = i.Name,
-                CreatedDate = i.CreatedDate.ToString("MMMMdd"),
+                CreatedDate = i.CreatedDate.ToString("MMMM dd"),
                 Rating = i.Rating
             });
             return result.ToList();

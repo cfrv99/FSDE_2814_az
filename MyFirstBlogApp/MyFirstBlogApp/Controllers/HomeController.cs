@@ -4,6 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MyFirstBlogApp.Entities;
+using MyFirstBlogApp.Entities.Base;
+using MyFirstBlogApp.Factory;
 using MyFirstBlogApp.Models;
 
 namespace MyFirstBlogApp.Controllers
@@ -12,6 +15,8 @@ namespace MyFirstBlogApp.Controllers
     {
         public IActionResult Index()
         {
+            
+            ClassFactory.CreateInstance(new Post());
             return View();
         }
 

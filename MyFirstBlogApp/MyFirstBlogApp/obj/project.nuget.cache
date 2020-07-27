@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZKBbIh/mcxKcCVaaB1aQGtE1R2Rl0moODFhB5dRNaSrLRe3oul13IAepJo5m91/lUxlXqPjwTpyfb6c50fZK2g==",
+  "dgSpecHash": "nQHXmIy/4nMPphkKOp1bxKSJVVGX0tQuWmbsnNOrKG5VHejBekM3Hgl559PMuZ6SwiTDQXk6C/rh+UFKh4DKzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Murad\\source\\repos\\MyFirstBlogApp\\MyFirstBlogApp\\MyFirstBlogApp.csproj",
+  "projectFilePath": "C:\\Users\\Murad\\FSDE_2814\\MyFirstBlogApp\\MyFirstBlogApp\\MyFirstBlogApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Murad\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
