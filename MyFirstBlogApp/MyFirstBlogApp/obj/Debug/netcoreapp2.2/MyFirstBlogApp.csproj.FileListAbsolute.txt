@@ -84,3 +84,5 @@ C:\Users\Murad\FSDE_2814\MyFirstBlogApp\MyFirstBlogApp\obj\Debug\netcoreapp2.2\M
 C:\Users\Murad\FSDE_2814\MyFirstBlogApp\MyFirstBlogApp\obj\Debug\netcoreapp2.2\MyFirstBlogApp.pdb
 C:\Users\Murad\FSDE_2814\MyFirstBlogApp\MyFirstBlogApp\obj\Debug\netcoreapp2.2\MyFirstBlogApp.genruntimeconfig.cache
 C:\Users\Murad\FSDE_2814\MyFirstBlogApp\MyFirstBlogApp\obj\Debug\netcoreapp2.2\MyFirstBlogApp.csproj.CopyComplete
+C:\Users\Murad\FSDE_2814\MyFirstBlogApp\MyFirstBlogApp\obj\Debug\netcoreapp2.2\Razor\Views\Test\Index.cshtml.g.cs
+C:\Users\Murad\FSDE_2814\MyFirstBlogApp\MyFirstBlogApp\bin\Debug\netcoreapp2.2\libman.json
