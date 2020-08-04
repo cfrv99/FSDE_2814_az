@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div id="chat">
+        <form action="#" id="frm-send-message">
+            <label for="message">Message:</label>
+            <input type="text" id="message" />
+            <input type="submit" id="send" value="Send" />
+        </form>
+        <div class="clear"></div>
+        <ul id="messages">
+        </ul>
+    </div>
+
+<input type="submit" onclick="submitClick()" name="submit" id="submit" value="Submit" />
+<script src="~/lib/aspnet-signalr/signalr.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        var connection = new signalR.HubConnectionBuilder().withAutomaticReconnect([1000, 3000, 3000, 2000])
+            .withUrl("/chat").build();
+
+        connection.start().catch(err => console.log(err));
+
+        //long-pooling
+        connection.on("Connected", (message) => {
+            console.log(message);
+        })
+
+        //function submitClick() {
+        //    connection.invoke("SendMessage", "Ibrahim");
+        //}
+
+        //connection.on("ReceiveIbrahim", (message) => {
+        //    console.log(message);
+        //})
+        connection.on("ReceiveMessage", (message) => {
+            appendLine(message);
+        })
+        connection.on("SendMessage", () => {
+
+        })
+        document.getElementById('frm-send-message').addEventListener("submit", event => {
+            let message = document.getElementById('message').value;
+            document.getElementById('message').value = '';
+
+            connection.invoke("SendMessage", message);
+            event.preventDefault();
+        })
+
+        function appendLine(line) {
+            let li = document.createElement('li');
+            li.innerText = line;
+            document.getElementById('messages').appendChild(li);
+        }
+    })
+   
+</script>
