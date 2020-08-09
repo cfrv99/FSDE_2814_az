@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "KY8yC0iQ7SnQo7jNQnvnJ3y1LQhlNVC9tEnmuNxGj8JEJs82CUX/gKtSZ2SlwJjDYmBU3tnaBxNN5jEFz6KuZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Murad\\source\\repos\\MediatRLessons\\MediatRLessons\\MediatRLessons.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Murad\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
+    "C:\\Users\\Murad\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+    "C:\\Users\\Murad\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
