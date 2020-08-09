@@ -30,3 +30,9 @@
 <select class="form-control form-control-lg">
 
 </select>
+
+
+<form asp-action="UploadImage" enctype="multipart/form-data" method="post">
+    <input type="file" name="file" id="file"/>
+    <input type="submit"  value="Submit" />
+</form>
